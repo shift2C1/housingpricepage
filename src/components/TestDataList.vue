@@ -34,7 +34,7 @@ layui.use(["table"], function () {
 
     if (layEvent === 'detail') { //查看
       //do somehing
-      layer.msg("msg")
+      // layer.msg("msg")
       emit('setData',data)
       console.log(JSON.stringify(data))
     //   给表单赋值

@@ -1,12 +1,12 @@
 <script setup>
-import {defineProps,refs} from 'vue'
+import {defineProps,toRefs} from 'vue'
 const props=defineProps({
   formData:{
     type:[Object,Array],
     default:()=>[]
   }
 })
-const {formData}=refs(props)
+const {formData}=toRefs(props)
 layui.use(['layer', 'form', 'jquery','element'], function () {
   var layer = layui.layer
       , form = layui.form
