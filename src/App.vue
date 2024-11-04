@@ -8,24 +8,23 @@
 import PredictorForm from "@/components/PredictorForm.vue";
 import TestDataList from "@/components/TestDataList.vue";
 import Title from "@/components/Title.vue";
+import TestDataTitle from "@/components/TestDataTitle.vue";
 </script>
 
 <template>
-  <div>
+  <div class="layui-bg-orange">
     <Title></Title>
   </div>
 
-  <div id="predictform" class="layui-bg-black">
+  <div id="predictform" class="bg-color">
     <PredictorForm></PredictorForm>
   </div>
-  <div>
-    测试数据
+  <div class="layui-bg-orange" >
+    <TestDataTitle></TestDataTitle>
   </div>
-  <div class="layui-bg-cyan">
+  <div class="bg-color" >
     <TestDataList></TestDataList>
   </div>
-
-
 
 </template>
 

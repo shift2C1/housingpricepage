@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
     "layui-src": "^2.6.8",
     "vue": "^3.5.12"
   },
