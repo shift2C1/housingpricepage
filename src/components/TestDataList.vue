@@ -1,5 +1,6 @@
 <script setup>
-
+import { defineEmits } from 'vue'
+const emit=defineEmits(['setData'])
 
 layui.use(["table"], function () {
   var layer = layui.layer
@@ -34,6 +35,7 @@ layui.use(["table"], function () {
     if (layEvent === 'detail') { //查看
       //do somehing
       layer.msg("msg")
+      emit('setData',data)
       console.log(JSON.stringify(data))
     //   给表单赋值
     }
